@@ -47,8 +47,10 @@ int main(){
 void insman(char v[]){
 	int i;
 	
+	printf("\n\n>> ");
+	
 	for(i=0;i<DIM;i++){
-		scanf("%c", v[i]);
+		scanf("%c", &v[i]);
 	}
 }
 
@@ -113,8 +115,8 @@ void decifrazione(char v[], int cif1, int cif2){
 int menu(){
 	int s;
 	
-	printf("\n\n seleziona la modalita' di inserimento: \n\n\t 1- inserimento da file\n\n\t 2- inerimento manuale");
-	scanf("%d", s);
+	printf("\n\n seleziona la modalita' di inserimento: \n\n\t 1- inserimento da file\n\n\t 2- inerimento manuale\n\n>>");
+	scanf("%d", &s);
 	
 	return s;
 }
